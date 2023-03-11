@@ -8,15 +8,15 @@ const LineStyling = () => {
     <div className="line-styling">
       <div
         className="style-circle"
-        style={{ backgroundColor: theme.primary }}
+        style={{ backgroundColor: theme.buttonColor }}
       ></div>
       <div
         className="style-circle"
-        style={{ backgroundColor: theme.primary }}
+        style={{ backgroundColor: theme.buttonColor }}
       ></div>
       <div
         className="style-line"
-        style={{ backgroundColor: theme.primary }}
+        style={{ backgroundColor: theme.buttonColor }}
       ></div>
     </div>
   );

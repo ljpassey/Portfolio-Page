@@ -1,21 +1,15 @@
 import { IconButton, Snackbar, SnackbarContent } from "@mui/material";
 import React, { useContext } from "react";
 import { AiOutlineCheckCircle, AiOutlineSend } from "react-icons/ai";
-import {
-  FaFacebook,
-  FaGithub,
-  FaLinkedinIn,
-  FaMediumM,
-  FaStackOverflow,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FiAtSign, FiPhone } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { ThemeContext } from "../../../contexts/theme-context";
 import { contactsData } from "../../../data/contactsData";
 import "./contacts.css";
+import LineStyling from "../lineStyling";
+import thirdImage from "../../../assets/image/img3.jpg";
 
 const ContactUI = ({
   open,
@@ -39,8 +33,10 @@ const ContactUI = ({
       className="contacts"
       id="contacts"
       style={{ backgroundColor: theme.secondary }}
+      backgroundImage={thirdImage}
     >
-      <div className="contacts--container">
+      <LineStyling />
+      <div className="contacts--container" style={{ paddingTop: "12%" }}>
         <h1 style={{ color: "#D65A31" }}>Contact Me</h1>
         <div className="contacts-body">
           <div className="contacts-form">
@@ -191,9 +187,9 @@ const ContactUI = ({
           </div>
         </div>
       </div>
-      <div>
-        <img src={theme.contactImg} alt="contacts" className="contacts--img" />
-      </div>
+      {/* <div>
+        <img src={thirdImage} alt="contacts" style={{ width: '100%', }} />
+      </div> */}
     </div>
   );
 };

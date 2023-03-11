@@ -59,6 +59,7 @@ function LandingUI({ theme, drawerOpen, classes }) {
                 "Amateur Guitarist",
                 "Cat Dad",
                 "Husband",
+                "Film Photographer",
               ]}
               typeSpeed={40}
               backSpeed={60}

@@ -10,13 +10,13 @@ function Skills() {
 
     const skillBoxStyle = {
         backgroundColor: theme.secondary,
-        boxShadow: `0px 0px 12px ${theme.primary}`
+        boxShadow: `0px 0px 12px ${theme.buttonColor}`
     }
 
     return (
         <div className="skills" style={{ backgroundColor: theme.secondary }}>
             <div className="skillsHeader">
-                <h2 style={{ color: theme.primary }}>Skills</h2>
+                <h2 style={{ color: theme.primary, paddingTop: '50px' }}>Skills</h2>
             </div>
             <div className="skillsContainer">
                 <div className="skill--scroll">

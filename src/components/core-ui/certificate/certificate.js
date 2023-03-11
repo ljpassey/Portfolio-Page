@@ -6,7 +6,7 @@ import {
   Container,
   IconButton,
   Link,
-  Typography
+  Typography,
 } from "@mui/material";
 import React, { useContext } from "react";
 import { HiExternalLink } from "react-icons/hi";
@@ -36,21 +36,42 @@ const Certificate = () => {
   };
 
   return (
-    <Container sx={{ py: 5, border: "solid 5px #D65A31", borderRadius: "20px" }}>
+    <Container
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        paddingBottom: '30px',
+        height: "auto",
+        m: "20px",
+        width: "auto",
+        border: "solid 5px #D65A31",
+        borderRadius: "20px",
+        backgroundColor: theme.buttonColor,
+      }}
+    >
       <div className="certificate-header">
         <h1
           style={{
             color: "#D65A31",
+            paddingTop: "20px",
           }}
         >
           Certificates
         </h1>
       </div>
-      <Slider {...settings}>
+      <Slider
+        {...settings}
+        // sx={{ display: "flex", justifyContent: "space-between" }}
+      >
         {certificateData.map((item) => (
           <Card
             key={item.id}
-            sx={{ borderRadius: "10px", height: { xs: 320, sm: 480 } }}
+            sx={{
+              borderRadius: "20px",
+              height: { xs: 320, sm: 480 },
+              width: "100%",
+            }}
           >
             <CardActionArea>
               <CardMedia
@@ -58,6 +79,8 @@ const Certificate = () => {
                 sx={{
                   height: { xs: 270, sm: 420 },
                   borderBottom: "1px solid #f5f5f5",
+                  // display: "flex",
+                  // justifyContent: "space-between",
                 }}
                 image={item.image}
                 alt={item.title}
