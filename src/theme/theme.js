@@ -3,14 +3,14 @@ import { contactsImage } from './images'
 
 export const theLightTheme = {
   type: "light",
-  primary: "#1D9BF0",
+  primary: "#3F72AF",
   quaternary: "#EFF3F4",
   quaternaryLight: "#F7F9F9",
   secondary: "#ffffff",
   tertiary: "#0f1419",
-  buttonColor: "#C9D6DF",
+  buttonColor: "#DBE2EF",
   contactsimg: contactsImage,
-  orange: "#D65A31",
+  orange: "#112D4E",
 };
 
 export const theDarkTheme = {

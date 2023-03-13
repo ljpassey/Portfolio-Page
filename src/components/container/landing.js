@@ -22,9 +22,9 @@ const Landing = () => {
       border: `3px solid ${theme.primary}`,
       transition: "500ms ease-out",
       "&:hover": {
-        backgroundColor: "#D65A31",
+        backgroundColor: theme.tertiary,
         color: theme.secondary,
-        border: `3px solid ${theme.buttonColor}`,
+        border: `3px solid ${theme.orange}`,
       },
       [t.breakpoints.down("sm")]: {
         width: "180px",
@@ -45,9 +45,9 @@ const Landing = () => {
       border: `3px solid ${theme.primary}`,
       transition: "500ms ease-out",
       "&:hover": {
-        backgroundColor: "#D65A31",
+        backgroundColor: theme.tertiary,
         color: theme.secondary,
-        border: `3px solid ${theme.buttonColor}`,
+        border: `3px solid ${theme.orange}`,
       },
       [t.breakpoints.down("sm")]: {
         display: "none",

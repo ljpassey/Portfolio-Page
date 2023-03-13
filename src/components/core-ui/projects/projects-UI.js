@@ -13,8 +13,8 @@ function ProjectsUI({ theme, classes }) {
           className="projects"
           id="projects"
           style={{
-            backgroundColor: theme.buttonColor,
-            border: "solid 5px #D65A31",
+            backgroundColor: theme.primary,
+            border: `solid 5px ${theme.orange}`,
             boxSizing: "content-box",
             borderRadius: "20px",
             margin: "20px",
@@ -25,7 +25,7 @@ function ProjectsUI({ theme, classes }) {
           }}
         >
           <div className="projects--header">
-            <h1 style={{ color: theme.primary }}>Projects</h1>
+            <h1 style={{ color: theme.secondary }}>Projects</h1>
           </div>
           <div className="projects--body">
             <div className="projects--bodyContainer">
