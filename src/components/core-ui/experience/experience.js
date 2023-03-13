@@ -16,10 +16,10 @@ function Experience() {
         id="experience"
         sx={{
           width: "auto",
-          border: "solid 5px #D65A31",
+          border: `solid 5px ${theme.orange}`,
           borderRadius: "20px",
           margin: "20px",
-          backgroundColor: theme.buttonColor
+          backgroundColor: theme.primary,
         }}
       >
         <div className="experience-body">
@@ -27,7 +27,7 @@ function Experience() {
             <AnimationLottie animationPath={experience} />
           </div>
           <div className="experience-description">
-            <h1 style={{ color: "white" }}>Experience</h1>
+            <h1 style={{ color: theme.secondary }}>Experience</h1>
             {experienceData.map((exp) => (
               <ExperienceCard
                 key={exp.id}

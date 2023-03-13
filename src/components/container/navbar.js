@@ -20,12 +20,12 @@ const Navbar = () => {
   const useStyles = makeStyles((t) => ({
     navMenu: {
       fontSize: "2.5rem",
-      color: theme.tertiary,
+      color: theme.primary,
       cursor: "pointer",
       transform: "translateY(-10px)",
       transition: "color 0.3s",
       "&:hover": {
-        color: "#D65A31",
+        color: theme.orange,
       },
       [t.breakpoints.down("sm")]: {
         fontSize: "2.5rem",
@@ -41,7 +41,7 @@ const Navbar = () => {
       fontStyle: " normal",
       fontWeight: " normal",
       fontSize: " 24px",
-      backgroundColor: "white",
+      backgroundColor: theme.secondary,
       overflow: "hidden",
       borderTopRightRadius: "10px",
       borderBottomRightRadius: "10px",
@@ -53,13 +53,13 @@ const Navbar = () => {
       fontSize: "2rem",
       fontWeight: "bold",
       cursor: "pointer",
-      color: theme.primary,
+      color: theme.buttonColor,
       position: "absolute",
       right: 20,
       top: 20,
       transition: "color 0.2s",
       "&:hover": {
-        color: theme.tertiary,
+        color: theme.orange,
       },
       [t.breakpoints.down("sm")]: {
         right: 20,
@@ -69,8 +69,8 @@ const Navbar = () => {
     drawerItem: {
       margin: "1rem auto",
       borderRadius: "20px",
-      background: theme.secondary,
-      color: theme.primary,
+      background: theme.primary,
+      color: theme.quaternary,
       width: "fit",
       height: "60px",
       display: "flex",
@@ -79,10 +79,10 @@ const Navbar = () => {
       padding: "0 30px",
       boxSizing: "border-box",
       border: "2px solid",
-      borderColor: "#D65A31",
+      borderColor: theme.secondary,
       transition: "background-color 0.2s, color 0.2s",
       "&:hover": {
-        background: "#D65A31",
+        background: theme.buttonColor,
         color: theme.secondary,
       },
       [t.breakpoints.down("sm")]: {

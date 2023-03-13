@@ -45,15 +45,15 @@ const Certificate = () => {
         height: "auto",
         m: "20px",
         width: "auto",
-        border: "solid 5px #D65A31",
+        border: `solid 5px ${theme.orange}`,
         borderRadius: "20px",
-        backgroundColor: theme.buttonColor,
+        backgroundColor: theme.primary,
       }}
     >
       <div className="certificate-header">
         <h1
           style={{
-            color: "#D65A31",
+            color: theme.secondary,
             paddingTop: "20px",
           }}
         >

@@ -30,7 +30,7 @@
 .experience-card {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   width: 90%;
   height: 140px;

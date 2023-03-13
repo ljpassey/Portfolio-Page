@@ -4,6 +4,9 @@ import one from '../assets/svg/projects/one.svg'
 import two from '../assets/svg/projects/two.svg'
 import three from '../assets/svg/projects/three.svg'
 import four from '../assets/svg/projects/four.svg'
+import tempoIcon from '../assets/icons/tempoicon.svg'
+import datesForDays from '../assets/image/datesForDays.png'
+import map from '../assets/image/map.png'
 
 
 export const projectsData = [
@@ -15,7 +18,7 @@ export const projectsData = [
     tags: ["React", "SaaS", "Firebase", "Material UI"],
     code: "https://github.com/ljpassey/Tempo-Capstone-Project",
     demo: "https://www.youtube.com/watch?v=ML1jiIpbPNY",
-    image: one,
+    image: tempoIcon,
   },
   {
     id: 2,
@@ -25,7 +28,7 @@ export const projectsData = [
     tags: ["Javascript", "Express", "CSS", "PostgreSQL"],
     code: "https://github.com/ljpassey/dates-for-days-Capstone-Project",
     demo: "https://www.youtube.com/watch?v=nBS0qGO6bgA",
-    image: four,
+    image: datesForDays,
   },
   {
     id: 3,
@@ -35,7 +38,7 @@ export const projectsData = [
     tags: ["React", "APIs", "Redux"],
     code: "https://github.com/ljpassey/Unit-5-Country-Explorer-Project",
     demo: "https://github.com/ljpassey/Unit-5-Country-Explorer-Project",
-    image: eight,
+    image: map,
   },
 ];
 

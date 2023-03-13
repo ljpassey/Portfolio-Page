@@ -13,20 +13,7 @@ function About({ drawerOpen, classes }) {
   return (
     <div style={{ backgroundColor: theme.secondary }}>
       <Container className="about" id="about">
-        {/* <div className="line-styling">
-          <div
-            className="style-circle"
-            style={{ backgroundColor: theme.primary }}
-          ></div>
-          <div
-            className="style-circle"
-            style={{ backgroundColor: theme.primary }}
-          ></div>
-          <div
-            className="style-line"
-            style={{ backgroundColor: theme.primary }}
-          ></div>
-        </div> */}
+       
         <LineStyling />
         <div
           className="about-body"
@@ -42,11 +29,11 @@ function About({ drawerOpen, classes }) {
               width: "80%",
               height: "100%",
               display: "flex",
-              alignItems: "flex-start",
-              justifyContent: "flex-start",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
-            <h2 style={{ color: "#D65A31" }}>{aboutData.title}</h2>
+            <h2 style={{ color: theme.orange }}>{aboutData.title}</h2>
             <p style={{ color: theme.tertiary }}>
               {aboutData.description1}
               <br />
@@ -61,7 +48,7 @@ function About({ drawerOpen, classes }) {
               alt=""
               style={{
                 width: "100%",
-                border: "solid 5px #D65A31",
+                border: `solid 5px ${theme.orange}`,
                 boxSizing: "border-box",
                 borderRadius: "20px",
               }}
